@@ -29,7 +29,7 @@ function tenPhongBan(maPhongBan) {
 function HienThiAnh(props) {
   return (
     <div className="col-12 col-md-4 col-lg-3 profile-view-img">
-      <img className="" src={props.image} alt={props.name} />
+      <img className="" src="https://dangkytuyensinh.hust.edu.vn/api/files/2022/4/16/1650099017167.1321720245782..jpg" alt={props.name} />
     </div>
   );
 }

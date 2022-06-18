@@ -29,7 +29,7 @@ function RenderNhanVien(props) {
         to={"/nhanvienchitiet/" + props.nhanVienID}
         className="profile-card"
       >
-        <img className="profile-img" src={props.image} alt={props.name}></img>
+        <img className="profile-img" src="https://dangkytuyensinh.hust.edu.vn/api/files/2022/4/16/1650099017167.1321720245782..jpg" alt={props.name}></img>
         <h4 className="user-name mt-1 mb-0">{props.name}</h4>
         <div className="user-bio">{nameOfDepartment}</div>
       </Link>
