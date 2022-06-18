@@ -2,7 +2,6 @@ import * as ActionTypes from "./ActionTypes";
 import { baseUrl } from "../shared/baseUrl";
 
 export const addStaff = (staffList) => {
-  console.log("add staffList ");
   return {
     type: ActionTypes.ADD_STAFF,
     payload: staffList,

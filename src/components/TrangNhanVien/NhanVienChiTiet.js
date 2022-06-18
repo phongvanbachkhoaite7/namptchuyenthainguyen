@@ -72,7 +72,6 @@ function HienThiThongTin(props) {
   //  let a = props.staffList;
   // console.log("chitiet: "+ JSON.stringify(props));
   let a = [parseInt(props.match.params.id,10)];
-  console.log(props.staffs);
   const selectedStaff = props.staffs.filter((nhanVien) => nhanVien.id==a);
   const staff=selectedStaff[0];
   // let staff = props.staffs[a];

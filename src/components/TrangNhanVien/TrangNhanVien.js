@@ -37,7 +37,6 @@ function RenderNhanVien(props) {
   );
 }
 function FilterDept({ setActiveDept, activeDept, setFilteredStaff, staffs }) {
-  console.log(activeDept);
   function filteredDept(DeptId) {
     setActiveDept(DeptId);
     if (DeptId === 'All') {

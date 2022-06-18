@@ -12,7 +12,6 @@ function Edit(props) {
   function editStaff (staff){
     setStaffEdit(staff);
   }
-  // console.log(props);
   return (
     <motion.div
       animate={{ y: 10 }}

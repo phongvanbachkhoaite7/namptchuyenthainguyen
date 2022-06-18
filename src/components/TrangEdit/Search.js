@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import EditStaffForm from "./EditStaffForm";
 
 export default function Search(props) {
-  console.log(props);
   function isShowEditForm() {
     if (props.editUserStatus === true) {
       return (

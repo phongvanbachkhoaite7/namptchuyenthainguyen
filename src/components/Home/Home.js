@@ -18,7 +18,6 @@ function Home(props) {
       );
     }
     if (props.match.params.id) {
-      console.log(props.match.params.id);
       return (
         <NhanVienChiTiet
           staffs={props.staffs.staffs}

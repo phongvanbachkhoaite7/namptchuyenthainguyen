@@ -21,10 +21,8 @@ function RenderBreadcrumb() {
   );
 }
 function RenderNhanVien(props) {
-  console.log(props);
 
   const department = props.departments.departments;
-  console.log(department);
   const nameOfDepartment = department.map((phongban) => {
     if (phongban.id === props.departmentId) return phongban.name;
   });
@@ -48,10 +46,6 @@ function RenderNhanVien(props) {
   );
 }
 function PhongBan(props) {
-  console.log(props);
-
-  // const [deptId, setDeptId] = useState(props.match.params.id);
-  // if(deptId!=props.match.params.id) setDeptId(props.match.params.id);
   const departmentStaff = useSelector((state) => state.departmentstaffs);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -88,11 +82,8 @@ function PhongBan(props) {
       );
     }
     if (props.match.params.id) {
-      // console.log(props.match.params.id);
-      // console.log(departmentStaff.isLoading);
       let staff = "";
       if (props.departmentstaffs.error) {
-        console.log(props.departmentstaffs.error);
         return (
           <div className="container mt-5">
             <h3>{props.departmentstaffs.error}</h3>
@@ -102,7 +93,6 @@ function PhongBan(props) {
       }
       else {
         staff = departmentStaff.departmentstaffs.map((nhanVien) => {
-          console.log(nhanVien);
           return (
             <RenderNhanVien
               key={nhanVien.id}

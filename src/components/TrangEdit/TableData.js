@@ -42,7 +42,6 @@ function TableDataRow(props) {
 }
 
 export default function TableData(props) {
-  console.log(props);
 
   const staff = props.staffs.map((staff) => {
     return (

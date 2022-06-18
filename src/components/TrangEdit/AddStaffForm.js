@@ -24,7 +24,6 @@ function AddStaffForm(props) {
     } else {
       // newStaff.id=staffList.length;
       setNewStaff(newStaff);
-      console.log(newStaff);
       postData(dispatch,newStaff);
       // staffList.push(newStaff);
       // props.getNewStaffList(staffList);
@@ -41,15 +40,13 @@ function AddStaffForm(props) {
   function checkValid(name, value) {
     setIsDisable(false);
     if (name === "name") {
-      console.log("name la "+value);
-      console.log("do dai " +value.length);
+  
       if ( value===""|| value.length < 4 || value.length > 30 ) {
         setIsDisable(true);
         setNameError("Yêu cầu nhập nhiều hơn 3 ký tự và ít hơn 30 ký tự");
       } else {
         setNameError("");
         newStaff[name] = value;
-        console.log(newStaff);
       }
     }
     if (name === "doB") {
@@ -59,7 +56,6 @@ function AddStaffForm(props) {
       } else {
         setDoBError("");
         newStaff[name] = value;
-        console.log(newStaff);
       }
     }
     if (name === "startDate") {
@@ -69,7 +65,6 @@ function AddStaffForm(props) {
       } else {
         setStartDateError("");
         newStaff[name] = value;
-        console.log(newStaff);
       }
     }
     if (name === "department") {
@@ -80,7 +75,6 @@ function AddStaffForm(props) {
         setDepartmentError("");
         departmentList[Number(value)].numberOfStaff++;
         newStaff['departmentId'] = props.departments[Number(value)].id;
-        console.log(newStaff);
       }
     }
     if (name === "salaryScale") {

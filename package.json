@@ -2,7 +2,7 @@
   "name": "confusion",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://namu10x.github.io/",
+  "homepage": "https://namu10x.github.io",
   "dependencies": {
     "bootstrap": "4.0.0",
     "bootstrap-social": "5.1.1",
